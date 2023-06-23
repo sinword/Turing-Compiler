@@ -1,0 +1,114 @@
+class test5
+{
+	field static int grade = 59
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		getstatic int test5.grade
+		sipush 90
+		isub
+		ifge L0
+		iconst_0
+		goto L1
+		L0: 
+		nop
+		iconst_1
+		L1: 
+		nop
+			ifeq Lelse2
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc "A"
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			goto Lexit3
+			Lelse2: 
+			nop
+			getstatic int test5.grade
+			sipush 70
+			isub
+			ifge L4
+			iconst_0
+			goto L5
+			L4: 
+			nop
+			iconst_1
+			L5: 
+			nop
+			getstatic int test5.grade
+			sipush 90
+			isub
+			iflt L6
+			iconst_0
+			goto L7
+			L6: 
+			nop
+			iconst_1
+			L7: 
+			nop
+			iand
+				ifeq Lelse8
+				getstatic java.io.PrintStream java.lang.System.out
+				ldc "B"
+				invokevirtual void java.io.PrintStream.print(java.lang.String)
+				goto Lexit9
+				Lelse8: 
+				nop
+				getstatic int test5.grade
+				sipush 60
+				isub
+				ifge L10
+				iconst_0
+				goto L11
+				L10: 
+				nop
+				iconst_1
+				L11: 
+				nop
+				getstatic int test5.grade
+				sipush 70
+				isub
+				ifle L12
+				iconst_0
+				goto L13
+				L12: 
+				nop
+				iconst_1
+				L13: 
+				nop
+				iand
+					ifeq Lelse14
+					getstatic java.io.PrintStream java.lang.System.out
+					ldc "C"
+					invokevirtual void java.io.PrintStream.print(java.lang.String)
+				goto Lexit15
+				Lelse14: 
+				nop
+				Lexit15: 
+				nop
+				getstatic int test5.grade
+				sipush 60
+				isub
+				iflt L16
+				iconst_0
+				goto L17
+				L16: 
+				nop
+				iconst_1
+				L17: 
+				nop
+					ifeq Lelse18
+					getstatic java.io.PrintStream java.lang.System.out
+					ldc "D"
+					invokevirtual void java.io.PrintStream.print(java.lang.String)
+				goto Lexit19
+				Lelse18: 
+				nop
+				Lexit19: 
+				nop
+			Lexit9: 
+			nop
+		Lexit3: 
+		nop
+		return
+	}
+}

@@ -1,0 +1,122 @@
+class test1
+{
+	field static int i = 1
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+			Lbegin0: 
+			nop
+			getstatic int test1.i
+			sipush 10
+			isub
+			ifeq L1
+			iconst_0
+			goto L2
+			L1: 
+			nop
+			iconst_1
+			L2: 
+			nop
+			ifne Lexit0
+			getstatic int test1.i
+			sipush 1
+			iadd
+			putstatic int test1.i
+			sipush 2
+			istore 0
+			sipush 3
+			istore 0
+			goto Lbegin0
+			Lexit0: 
+		nop
+		getstatic java.io.PrintStream java.lang.System.out
+		getstatic int test1.i
+		invokevirtual void java.io.PrintStream.print(int)
+			Lbegin3: 
+			nop
+			getstatic int test1.i
+			sipush 1
+			iadd
+			putstatic int test1.i
+			getstatic int test1.i
+			sipush 10
+			isub
+			ifeq L4
+			iconst_0
+			goto L5
+			L4: 
+			nop
+			iconst_1
+			L5: 
+			nop
+			ifne Lexit3
+			sipush 2
+			istore 0
+			sipush 3
+			istore 0
+			goto Lbegin3
+			Lexit3: 
+		nop
+		getstatic java.io.PrintStream java.lang.System.out
+		getstatic int test1.i
+		invokevirtual void java.io.PrintStream.print(int)
+			Lbegin6: 
+			nop
+			getstatic int test1.i
+			sipush 1
+			iadd
+			putstatic int test1.i
+			sipush 2
+			istore 0
+			getstatic int test1.i
+			sipush 10
+			isub
+			ifeq L7
+			iconst_0
+			goto L8
+			L7: 
+			nop
+			iconst_1
+			L8: 
+			nop
+			ifne Lexit6
+			sipush 3
+			istore 0
+			goto Lbegin6
+			Lexit6: 
+		nop
+		getstatic java.io.PrintStream java.lang.System.out
+		getstatic int test1.i
+		invokevirtual void java.io.PrintStream.print(int)
+			Lbegin9: 
+			nop
+			getstatic int test1.i
+			sipush 1
+			iadd
+			putstatic int test1.i
+			sipush 2
+			istore 0
+			sipush 3
+			istore 0
+			getstatic int test1.i
+			sipush 10
+			isub
+			ifeq L10
+			iconst_0
+			goto L11
+			L10: 
+			nop
+			iconst_1
+			L11: 
+			nop
+			ifne Lexit9
+			goto Lbegin9
+			Lexit9: 
+		nop
+		getstatic java.io.PrintStream java.lang.System.out
+		getstatic int test1.i
+		invokevirtual void java.io.PrintStream.print(int)
+		return
+	}
+}

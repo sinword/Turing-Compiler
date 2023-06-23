@@ -1,0 +1,53 @@
+class bit
+{
+	method public static void bit(int)
+	max_stack 15
+	max_locals 15
+	{
+		sipush 0
+		istore 1
+			Lbegin0: 
+			nop
+			iload 0
+			sipush 10
+			idiv
+			istore 0
+			iload 1
+			sipush 1
+			iadd
+			istore 1
+			iload 0
+			sipush 0
+			isub
+			ifle L1
+			iconst_0
+			goto L2
+			L1: 
+			nop
+			iconst_1
+			L2: 
+			nop
+			ifne Lexit0
+			goto Lbegin0
+			Lexit0: 
+		nop
+		getstatic java.io.PrintStream java.lang.System.out
+		iload 1
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		return
+	}
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		sipush 0
+		invokestatic void bit.bit(int)
+		sipush 1234
+		invokestatic void bit.bit(int)
+		sipush 15345
+		invokestatic void bit.bit(int)
+		return
+	}
+}

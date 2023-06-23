@@ -1,0 +1,119 @@
+class begin
+{
+	field static int i
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc "A"
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			sipush 1
+			istore 0
+			Lbegin0: 
+			nop
+			iload 0
+			sipush 3
+			isub
+			ifgt L1
+			iconst_0
+			goto L2
+			L1: 
+			nop
+			iconst_1
+			L2: 
+			nop
+			ifne Lexit0
+				getstatic java.io.PrintStream java.lang.System.out
+				ldc "for is good"
+				invokevirtual void java.io.PrintStream.print(java.lang.String)
+				getstatic java.io.PrintStream java.lang.System.out
+				iload 0
+				invokevirtual void java.io.PrintStream.print(int)
+				getstatic java.io.PrintStream java.lang.System.out
+				invokevirtual void java.io.PrintStream.println()
+			iload 0
+			sipush 1
+			iadd
+			istore 0
+			goto Lbegin0
+			Lexit0: 
+			nop
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc "B"
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			sipush 0
+			putstatic int begin.i
+				Lbegin3: 
+				nop
+				getstatic int begin.i
+				sipush 3
+				isub
+				ifeq L4
+				iconst_0
+				goto L5
+				L4: 
+				nop
+				iconst_1
+				L5: 
+				nop
+				ifne Lexit3
+					getstatic java.io.PrintStream java.lang.System.out
+					ldc "loop is good"
+					invokevirtual void java.io.PrintStream.print(java.lang.String)
+					getstatic java.io.PrintStream java.lang.System.out
+					getstatic int begin.i
+					invokevirtual void java.io.PrintStream.print(int)
+					getstatic java.io.PrintStream java.lang.System.out
+					invokevirtual void java.io.PrintStream.println()
+				getstatic int begin.i
+				sipush 1
+				iadd
+				putstatic int begin.i
+				goto Lbegin3
+				Lexit3: 
+			nop
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc "C"
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			iconst_1
+				ifeq Lelse6
+					getstatic java.io.PrintStream java.lang.System.out
+					ldc "if is good"
+					invokevirtual void java.io.PrintStream.print(java.lang.String)
+					getstatic java.io.PrintStream java.lang.System.out
+					invokevirtual void java.io.PrintStream.println()
+			goto Lexit7
+			Lelse6: 
+			nop
+			Lexit7: 
+			nop
+				iconst_0
+					ifeq Lelse8
+					getstatic java.io.PrintStream java.lang.System.out
+					ldc "error"
+					invokevirtual void java.io.PrintStream.print(java.lang.String)
+					goto Lexit9
+					Lelse8: 
+					nop
+						getstatic java.io.PrintStream java.lang.System.out
+						ldc "else is good"
+						invokevirtual void java.io.PrintStream.print(java.lang.String)
+						getstatic java.io.PrintStream java.lang.System.out
+						invokevirtual void java.io.PrintStream.println()
+				Lexit9: 
+				nop
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc "D"
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+		return
+	}
+}

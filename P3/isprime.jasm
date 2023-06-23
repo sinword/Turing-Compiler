@@ -1,0 +1,118 @@
+class isprime
+{
+	field static int counter
+	field static int i = 1
+	method public static int isPrime(int)
+	max_stack 15
+	max_locals 15
+	{
+		sipush 0
+		istore 1
+			Lbegin0: 
+			nop
+			getstatic int isprime.i
+			iload 0
+			isub
+			ifgt L1
+			iconst_0
+			goto L2
+			L1: 
+			nop
+			iconst_1
+			L2: 
+			nop
+			ifne Lexit0
+			iload 0
+			getstatic int isprime.i
+			irem
+			sipush 0
+			isub
+			ifeq L3
+			iconst_0
+			goto L4
+			L3: 
+			nop
+			iconst_1
+			L4: 
+			nop
+				ifeq Lelse5
+				getstatic java.io.PrintStream java.lang.System.out
+				iload 0
+				invokevirtual void java.io.PrintStream.print(int)
+				getstatic java.io.PrintStream java.lang.System.out
+				ldc " can be mod = 0 by "
+				invokevirtual void java.io.PrintStream.print(java.lang.String)
+				getstatic java.io.PrintStream java.lang.System.out
+				getstatic int isprime.i
+				invokevirtual void java.io.PrintStream.print(int)
+				getstatic java.io.PrintStream java.lang.System.out
+				invokevirtual void java.io.PrintStream.println()
+				iload 1
+				sipush 1
+				iadd
+				istore 1
+			goto Lexit6
+			Lelse5: 
+			nop
+			Lexit6: 
+			nop
+			getstatic int isprime.i
+			sipush 1
+			iadd
+			putstatic int isprime.i
+			goto Lbegin0
+			Lexit0: 
+		nop
+		getstatic java.io.PrintStream java.lang.System.out
+		ldc "counter: "
+		invokevirtual void java.io.PrintStream.print(java.lang.String)
+		getstatic java.io.PrintStream java.lang.System.out
+		iload 1
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		iload 1
+		sipush 2
+		isub
+		ifeq L7
+		iconst_0
+		goto L8
+		L7: 
+		nop
+		iconst_1
+		L8: 
+		nop
+			ifeq Lelse9
+			sipush 1
+			ireturn
+			goto Lexit10
+			Lelse9: 
+			nop
+			sipush 0
+			ireturn
+		Lexit10: 
+		nop
+	}
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		sipush 13
+		invokestatic int isprime.isPrime(int)
+			ifeq Lelse11
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc "Yes"
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			goto Lexit12
+			Lelse11: 
+			nop
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc "No"
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+		Lexit12: 
+		nop
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		return
+	}
+}

@@ -1,0 +1,47 @@
+class test9
+{
+	field static int a
+	field static int b = 10
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+			sipush 30
+			istore 1
+			getstatic java.io.PrintStream java.lang.System.out
+			getstatic int test9.b
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			getstatic java.io.PrintStream java.lang.System.out
+			sipush 20
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			getstatic java.io.PrintStream java.lang.System.out
+			iload 1
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			getstatic java.io.PrintStream java.lang.System.out
+			sipush 40
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			sipush 50
+			putstatic int test9.a
+			getstatic java.io.PrintStream java.lang.System.out
+			getstatic int test9.a
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			sipush 60
+			istore 0
+			getstatic java.io.PrintStream java.lang.System.out
+			iload 0
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+		return
+	}
+}

@@ -1,0 +1,45 @@
+class test6
+{
+	method public static int isOdd(int)
+	max_stack 15
+	max_locals 15
+	{
+		iload 0
+		sipush 2
+		irem
+		sipush 1
+		isub
+		ifeq L0
+		iconst_0
+		goto L1
+		L0: 
+		nop
+		iconst_1
+		L1: 
+		nop
+			ifeq Lelse2
+			sipush 1
+			ireturn
+			goto Lexit3
+			Lelse2: 
+			nop
+			sipush 0
+			ireturn
+		Lexit3: 
+		nop
+	}
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 5
+		invokestatic int test6.isOdd(int)
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 4
+		invokestatic int test6.isOdd(int)
+		invokevirtual void java.io.PrintStream.print(int)
+		return
+	}
+}

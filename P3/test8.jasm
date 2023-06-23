@@ -1,0 +1,207 @@
+class test8
+{
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_1
+		iconst_1
+		ixor
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_0
+		iconst_1
+		ixor
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_1
+		iconst_1
+		ixor
+		iconst_1
+		ixor
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_1
+		iconst_1
+		iand
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_1
+		iconst_0
+		iand
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_0
+		iconst_1
+		ior
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_0
+		iconst_0
+		ior
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_0
+		iconst_1
+		iconst_1
+		ixor
+		ior
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		iconst_1
+		iconst_0
+		iconst_1
+		ixor
+		iand
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 2
+		isub
+		iflt L0
+		iconst_0
+		goto L1
+		L0: 
+		nop
+		iconst_1
+		L1: 
+		nop
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 3
+		isub
+		ifgt L2
+		iconst_0
+		goto L3
+		L2: 
+		nop
+		iconst_1
+		L3: 
+		nop
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 1
+		isub
+		ifeq L4
+		iconst_0
+		goto L5
+		L4: 
+		nop
+		iconst_1
+		L5: 
+		nop
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 2
+		isub
+		ifne L6
+		iconst_0
+		goto L7
+		L6: 
+		nop
+		iconst_1
+		L7: 
+		nop
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 1
+		isub
+		ifge L8
+		iconst_0
+		goto L9
+		L8: 
+		nop
+		iconst_1
+		L9: 
+		nop
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 2
+		isub
+		iflt L10
+		iconst_0
+		goto L11
+		L10: 
+		nop
+		iconst_1
+		L11: 
+		nop
+		sipush 2
+		sipush 3
+		isub
+		iflt L12
+		iconst_0
+		goto L13
+		L12: 
+		nop
+		iconst_1
+		L13: 
+		nop
+		iand
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 2
+		isub
+		ifgt L14
+		iconst_0
+		goto L15
+		L14: 
+		nop
+		iconst_1
+		L15: 
+		nop
+		sipush 1
+		sipush 0
+		isub
+		ifge L16
+		iconst_0
+		goto L17
+		L16: 
+		nop
+		iconst_1
+		L17: 
+		nop
+		ior
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		return
+	}
+}

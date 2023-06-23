@@ -1,0 +1,85 @@
+class hanoi
+{
+	method public static void hanoi(int, int, int, int)
+	max_stack 15
+	max_locals 15
+	{
+		iload 0
+		sipush 1
+		isub
+		ifeq L0
+		iconst_0
+		goto L1
+		L0: 
+		nop
+		iconst_1
+		L1: 
+		nop
+			ifeq Lelse2
+			getstatic java.io.PrintStream java.lang.System.out
+			iload 0
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc ": "
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			getstatic java.io.PrintStream java.lang.System.out
+			iload 1
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc " > "
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			getstatic java.io.PrintStream java.lang.System.out
+			iload 2
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			goto Lexit3
+			Lelse2: 
+			nop
+			iload 0
+			sipush 1
+			isub
+			iload 1
+			iload 3
+			iload 2
+			invokestatic void hanoi.hanoi(int, int, int, int)
+			getstatic java.io.PrintStream java.lang.System.out
+			iload 0
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc ": "
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			getstatic java.io.PrintStream java.lang.System.out
+			iload 1
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			ldc " > "
+			invokevirtual void java.io.PrintStream.print(java.lang.String)
+			getstatic java.io.PrintStream java.lang.System.out
+			iload 2
+			invokevirtual void java.io.PrintStream.print(int)
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			iload 0
+			sipush 1
+			isub
+			iload 3
+			iload 2
+			iload 1
+			invokestatic void hanoi.hanoi(int, int, int, int)
+		Lexit3: 
+		nop
+		return
+	}
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		sipush 3
+		sipush 1
+		sipush 2
+		sipush 3
+		invokestatic void hanoi.hanoi(int, int, int, int)
+		return
+	}
+}

@@ -1,0 +1,70 @@
+class test7
+{
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 1
+		iadd
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush 1
+		isub
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 4
+		sipush 2
+		imul
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 6
+		sipush 3
+		idiv
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 3
+		sipush 2
+		irem
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush -1
+		iadd
+		sipush 3
+		sipush 1
+		iadd
+		sipush 2
+		imul
+		iadd
+		sipush 4
+		sipush 3
+		imul
+		iadd
+		sipush 1
+		iadd
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		getstatic java.io.PrintStream java.lang.System.out
+		sipush 1
+		sipush -1
+		iadd
+		invokevirtual void java.io.PrintStream.print(int)
+		getstatic java.io.PrintStream java.lang.System.out
+		invokevirtual void java.io.PrintStream.println()
+		return
+	}
+}

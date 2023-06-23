@@ -1,0 +1,102 @@
+class pyramid
+{
+	method public static void pyramid(int)
+	max_stack 15
+	max_locals 15
+	{
+		sipush 1
+		istore 1
+			Lbegin0: 
+			nop
+			iload 1
+			iload 0
+			isub
+			ifgt L1
+			iconst_0
+			goto L2
+			L1: 
+			nop
+			iconst_1
+			L2: 
+			nop
+			ifne Lexit0
+			sipush 1
+			istore 2
+				Lbegin3: 
+				nop
+				iload 2
+				iload 0
+				iload 1
+				isub
+				isub
+				ifgt L4
+				iconst_0
+				goto L5
+				L4: 
+				nop
+				iconst_1
+				L5: 
+				nop
+				ifne Lexit3
+				getstatic java.io.PrintStream java.lang.System.out
+				ldc " "
+				invokevirtual void java.io.PrintStream.print(java.lang.String)
+				iload 2
+				sipush 1
+				iadd
+				istore 2
+				goto Lbegin3
+				Lexit3: 
+			nop
+			sipush 1
+			istore 2
+				Lbegin6: 
+				nop
+				iload 2
+				sipush 2
+				iload 1
+				imul
+				sipush 1
+				isub
+				isub
+				ifgt L7
+				iconst_0
+				goto L8
+				L7: 
+				nop
+				iconst_1
+				L8: 
+				nop
+				ifne Lexit6
+				getstatic java.io.PrintStream java.lang.System.out
+				ldc "*"
+				invokevirtual void java.io.PrintStream.print(java.lang.String)
+				iload 2
+				sipush 1
+				iadd
+				istore 2
+				goto Lbegin6
+				Lexit6: 
+			nop
+			getstatic java.io.PrintStream java.lang.System.out
+			invokevirtual void java.io.PrintStream.println()
+			iload 1
+			sipush 1
+			iadd
+			istore 1
+			goto Lbegin0
+			Lexit0: 
+		nop
+		return
+	}
+	method public static void main(java.lang.String[])
+	max_stack 15
+	max_locals 15
+	{
+		sipush 3
+		invokestatic void pyramid.pyramid(int)
+		sipush 5
+		invokestatic void pyramid.pyramid(int)
+		return
+	}
+}
